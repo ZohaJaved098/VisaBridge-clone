@@ -1,0 +1,174 @@
+.visual {
+    background: url("https://visabridge.ai/wp-content/uploads/2024/06/group15.bd46bd09cb1f9b8d16df.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100vw;
+    height: 80vh;
+    position: relative; 
+    margin-bottom: 0;
+}
+
+.pics {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.cart, .boat, .plane {
+    position: absolute;
+    margin-top: 0;
+}
+
+.cart {
+    left: -3%;  
+    top: 22%;  
+    animation: slideRightCart 2s linear -1s forwards ;
+}
+.cart img{
+    width: 27vw;
+}
+
+.boat {
+    left: 35%;   
+    top: 26%;    
+    animation: tilt 6s infinite ease-in-out;
+}
+.boat img{
+    width: 30vw;
+}
+
+.plane {
+    left: 69%;   
+    top: 25%;
+    animation: slideRightBoat 2s linear -1s forwards ;
+}
+.plane img{
+    width: 23vw;
+
+}
+
+@keyframes tilt {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-3deg);
+    }
+    50% {
+        transform: rotate(0deg);  
+    }
+    75% {
+        transform: rotate(3deg);  
+    }
+    100% {
+        transform: rotate(0deg);  
+    }
+}
+@keyframes slideRightCart {
+    from {
+        left: -50%;  
+        opacity: 0;
+    }
+    to {
+        left: 2%;  
+        opacity: 1;
+    }
+}
+@keyframes slideRightBoat {
+    from {
+        left: 30%;
+        opacity: 0;
+    }
+    to {
+    left: 69%;
+    opacity: 1;
+    }
+    
+}
+
+
+@media (max-width:1024px) {
+    .visual {
+        height: 100vh;
+    }
+    .cart {
+        left: -3%;  
+        top: 35%;  
+    }
+    .cart img{
+        width: 30vw;
+    }
+    
+    .boat {
+        left: 35%;   
+        top: 27%;    
+    }
+    .boat img{
+        width: 34vw;
+    }
+    
+    .plane {
+        left: 69%;   
+        top: 30%;
+    }
+    .plane img{
+        width: 30vw;
+    }    
+}
+
+@media (max-width: 768px) {
+
+    .cart {
+        left: -3%;  
+        top: 38%;  
+        
+    }
+    .cart img{
+        width: 30vw;
+    }
+    
+    .boat {
+        left: 35%;   
+        top: 38%;   
+    }
+    .boat img{
+        width: 30vw;
+    }
+    
+    .plane {
+        left: 66%;   
+        top: 38%;
+    }
+    .plane img{
+        width: 30vw;
+    }
+}
+@media (max-width: 680px) {
+    .visual {
+        width: 105vw;
+    }
+    
+    .pics {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .cart, .boat, .plane {
+        margin-top: 0;
+    }
+    
+    .cart {  
+        top: 43%;
+    }
+    
+    .boat { 
+        top: 43%;   
+    }
+
+    .plane {
+        left: 50%;
+        top: 40%;
+    }
+
+}

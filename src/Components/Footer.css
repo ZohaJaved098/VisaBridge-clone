@@ -1,0 +1,258 @@
+.footer {
+    background-image: url("https://visabridge.ai/wp-content/uploads/2024/06/footertopSVG.png"), url("https://visabridge.ai/wp-content/uploads/2024/06/dustbg.webp");
+    background-position: center top, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain cover;
+    padding: 10px;
+    align-items: flex-start;
+    position: relative;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.left, .center, .right{
+    padding: 10px;
+}
+.left{
+    align-items: flex-start;
+    width: 30%;
+}
+.document{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;  
+    text-align: left;
+    color: #4C3861;
+    font-weight: 700;
+}
+.left .icon{
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.right{
+    align-items: flex-end; 
+    width: 30%;  
+}
+.contact{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    text-align: right;
+    color: #4C3861;
+    font-weight: 700;
+}
+
+.copyright {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    margin-top: 20px;
+    color: #6B7280;
+}
+.center{
+    align-items: center;
+    width: 40%;
+}
+.address{
+    text-align: center;
+    color: #31373d;
+    font-size: 16px;
+}
+.rotate-img {
+    width: 25vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -200px;
+    animation: rotate 15s linear infinite;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+@media (max-width:1300px) {
+    .rotate-img {
+        width: 28vw;
+    }
+}
+@media (max-width:1100px) {
+    .rotate-img {
+        width: 35vw;
+        left: 50%;
+        bottom: -200px;
+    }
+    .document{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 5px;  
+    }    
+}
+@media (max-width: 720px) {
+
+    
+    .rotate-img {        
+        width: 45vw;
+    }
+
+    .footer {
+        margin-top: 100px;
+        position: relative;;
+        padding: 10px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        overflow: hidden;
+    }
+
+    .left, .center, .right {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .document, .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        font-weight: 700;
+    }
+
+    .left .icon, .copyright {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .address{
+        display: none;
+    }
+    .document, .contact, .left .icon, .copyright{
+        position: absolute;
+    }
+    .document{
+        top: 0;
+        right: 40%;
+        left: 40%;
+    }
+    .contact{
+        top: 55px;
+        right: 40%;
+        left: 40%;
+    }
+    .left .icon{
+        top: 90px;
+        right: 40%;
+        left: 40%;
+    }
+    .copyright{
+        top: 140px;
+        right: 30%;
+        left: 30%;
+    }
+}
+
+@media (max-width: 500px) {
+    .rotate-img {
+        left: 50%;
+        bottom: -150px;     
+        width: 55vw;
+    }
+    .footer {
+        margin-top: 100px;
+        position: relative;;
+        padding: 10px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        overflow: hidden;
+    }
+
+    .left, .center, .right {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .document, .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        font-weight: 700;
+    }
+
+    .left .icon, .copyright {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .address{
+        display: none;
+    }
+    .document, .contact, .left .icon, .copyright{
+        position: absolute;
+    }
+    .document{
+        top: 0;
+        right: 30%;
+        left: 30%;
+    }
+    .contact{
+        top: 55px;
+        right: 30%;
+        left: 30%;
+    }
+    .left .icon{
+        top: 90px;
+        right: 40%;
+        left: 40%;
+    }
+    .copyright{
+        top: 140px;
+        right: 20%;
+        left: 20%;
+    }
+}
+
+@media (max-width: 350px) {
+    .rotate-img {
+        left: 50%;
+        bottom: -100px;     
+        width: 55vw;
+    }
+    .document{
+        top: 0;
+        right: 20%;
+        left: 20%;
+    }
+    .contact{
+        top: 55px;
+        right: 30%;
+        left: 30%;
+    }
+    .left .icon{
+        top: 90px;
+        right: 40%;
+        left: 40%;
+    }
+    .copyright{
+        top: 140px;
+        right: 20%;
+        left: 20%;
+    }
+}

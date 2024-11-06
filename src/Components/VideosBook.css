@@ -1,0 +1,41 @@
+.contents{
+    background-color: #ffffff;
+    color: #333333;
+    width: 100%;
+    position: relative;
+    padding: 20px;    
+    justify-items: center;
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.contents title{
+    padding: 32px 0;
+}
+.contents .title h2{
+    color: #3a373d;
+    font-size: 36px;
+    font-weight: 600;
+}
+.contents .title p{
+    color: #000000;
+    max-width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+.btn{
+    padding: 40px 0;
+}
+.btn:last-child{
+    padding: 40px 0 80px 0;
+}
+@media (max-width:500px) {
+    .contents{
+        width: 105%;
+    }
+    .contents .title h2{
+        font-size: 24px;
+    }
+}
